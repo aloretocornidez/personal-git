@@ -7,7 +7,7 @@ alias l='ls -gGh --color=auto --group-directories-first'
 alias ll='ls -gGh --color=auto --group-directories-first'
 
 ## This is so I don't remove anything by accident.
-alias rm='rm -i'
+# alias rm='rm -i'
 
 
 ## `grep` Alies

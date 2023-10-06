@@ -74,6 +74,8 @@ def main():
     print('Calling plotTransferFunction()')
     plotTransferFunction(numerator, denominator)
 
+    input()
+
 
     
 if __name__ == '__main__':
