@@ -13,7 +13,7 @@ Templates that I have Ctrl+C and Ctrl+V off the internet for my use whenever I w
 ## opencv test
 This contains a simple open cv project that I use to verify functionality of my opencv library on new machines.
 
-## playing around directory
+## messing-around
 This folder contains multiple randome things that may or may not be important. It's basically just random things.
 
 ## scripts 
