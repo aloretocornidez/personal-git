@@ -1,8 +1,8 @@
-#include "ClassList.hpp"
+#include "LinkedList.hpp"
 #include <iostream>
 #include <string>
 
-void classList::insertNode(int data) {
+void myLinkedList::insertNode(int data) {
 
   Node *newNode = new Node(data);
 
@@ -23,7 +23,7 @@ void classList::insertNode(int data) {
   temp->next = newNode;
 }
 
-void classList::printList() {
+void myLinkedList::printList() {
 
   Node *temp = head;
 
@@ -34,7 +34,7 @@ void classList::printList() {
   }
 }
 
-void classList::deleteNode(int index) {
+void myLinkedList::deleteNode(int index) {
 
   Node *temp = NULL;
 
@@ -54,7 +54,8 @@ void classList::deleteNode(int index) {
 
   // Check if the nodeOffset is greater than the list size.
   if (index > listSize) {
-    std::cout << "Invalid index for delete node function. Index: "<< index << std::endl;
+    std::cout << "Invalid index for delete node function. Index: " << index
+              << std::endl;
     return;
   }
 
@@ -74,16 +75,19 @@ void classList::deleteNode(int index) {
   }
 
   // Traverse the list to find the node to be deleted.
-  Node* temp2 = nullptr;
-  for(int i = 0; i < index; i++)
-  {
-    temp2 = temp;
+  Node *previous = nullptr;
+
+  // Setting temp node to head to begin iteration.
+  temp = this->head;
+
+  for (int i = 0; i < index; i++) {
+    previous = temp;
     temp = temp->next;
-    
   }
 
-  // Set the Set temp1 and temp2 to be the nodes
-  temp2->next = temp;
+  // Set node after deleted node to be the after the node before the deleted node
+  previous->next = temp->next;
 
   // Delete the node.
+  delete temp;
 }

@@ -21,14 +21,14 @@ public:
   }
 };
 
-class classList {
+class myLinkedList {
 
 private:
   // Parameters
   Node *head;
 
 public:
-  classList() { head = nullptr; }
+  myLinkedList() { head = nullptr; }
 
   // Getter and Setter
   int getNumber(int offset);
