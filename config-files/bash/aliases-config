@@ -3,6 +3,7 @@
 
 ## `ls` Aliases
 alias ls='ls -gGh --color=auto --group-directories-first'
+alias sl='ls -gGh --color=auto --group-directories-first'
 alias l='ls -gGh --color=auto --group-directories-first'
 alias ll='ls -gGh --color=auto --group-directories-first'
 
