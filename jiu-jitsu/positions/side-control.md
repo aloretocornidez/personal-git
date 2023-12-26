@@ -1,3 +1,4 @@
 # Side Control
 
-Return to: [[transitions]]
+Return to: [[transitions|Transitions]]
+
