@@ -21,3 +21,5 @@ alias vim='nvim'
 # Git Aliases
 alias pullgit='for i in */.git/; do (cd $i/..; pwd; git pull --recurse); done;'
 alias pushgit='git add .; git commit -m "auto-commit"; git push;'
+
+alias notes='touch `date +"%m-%d-%y"`.md && vim `date +"%m-%d-%y"`.md'
