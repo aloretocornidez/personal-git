@@ -1,11 +1,9 @@
 // My libraries
 #include "LinkedList.hpp"
-#include "test.hpp"
 
 // Default Libraries
 #include <iostream>
 #include <ostream>
-#include <string>
 
 // If parameter is not true, test fails
 // This check function would be provided by the test framework
@@ -30,7 +28,6 @@ int main(void) {
     classes.insertNode(i);
   }
 
-
   int nodeIndex = 4;
   std::cout << "Deleting Nodes: " << nodeIndex << std::endl;
 
@@ -42,7 +39,6 @@ int main(void) {
 
   // Print list
   classes.printList();
-
 
   return 0;
 }
