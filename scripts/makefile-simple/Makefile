@@ -1,10 +1,10 @@
 # This is a basic makefile to compile a program.
 
 CC=gcc
-CFLAGS=-Wall -Wfatal-errors
+CFLAGS=-Wall -Wfatal-errors -lm
 
 SRC=main.c
-PROGRAM=program
+PROGRAM=main
 
 .PHONY: all
 all: ${PROGRAM}
