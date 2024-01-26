@@ -7,8 +7,8 @@ This folder contains dotfiles and config files that I use on my machine.
 ## health
 Some mini notes that I have taken regarding health and lifestyle tips.
 
-## latex templates
-Templates that I have Ctrl+C and Ctrl+V off the internet for my use whenever I want to write a document in latex.
+## templates
+Templates that I have Ctrl+C and Ctrl+V off the internet for my use whenever I want to do something
 
 ## opencv test
 This contains a simple open cv project that I use to verify functionality of my opencv library on new machines.
