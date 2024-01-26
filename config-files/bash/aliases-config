@@ -22,6 +22,11 @@ alias vim='nvim'
 alias pullgit='for i in */.git/; do (cd $i/..; pwd; git pull --recurse); done;'
 alias pushgit='git add .; git commit -m "auto-commit"; git push;'
 
-alias notes='touch `date +"%m-%d-%y"`.md && vim `date +"%m-%d-%y"`.md'
+# alias notes='touch `date +"%m-%d-%y"`.md && vim `date +"%m-%d-%y"`.md'
+alias notes='cd ~/Downloads/school-notes/notes/spring-2024/'
 
 alias pandoc='pandoc -V geometry:margin=1in '
+
+alias todo='vim ~/Downloads/todo.md'
+
+
