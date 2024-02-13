@@ -4,16 +4,16 @@ import my_test as stuff
 
 
 def MainHello():
-    print('Main Hello')
+    print("Main Hello")
 
 
 def main():
-    print('Inside main.py')
+    print("Inside main.py")
 
     MainHello()
 
     stuff.TestHello()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
