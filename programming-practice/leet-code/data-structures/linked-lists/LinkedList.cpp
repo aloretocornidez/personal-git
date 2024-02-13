@@ -1,6 +1,5 @@
 #include "LinkedList.hpp"
 #include <iostream>
-#include <string>
 
 void myLinkedList::insertNode(int data) {
 
