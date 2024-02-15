@@ -31,3 +31,4 @@ alias pandoc='pandoc -V geometry:margin=1in '
 alias todo='vim ~/Downloads/todo.md'
 
 
+alias pluto-connect='ssh root@192.168.2.1'
