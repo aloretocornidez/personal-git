@@ -7,44 +7,39 @@
     Time: O(n)
     Space: O(n)
 */
-#include <vector>
 #include <stack>
+#include <vector>
 
 using namespace std;
 
-
-
 class Solution {
 public:
-    vector<int> dailyTemperatures(vector<int>& temperatures) {
+  vector<int> dailyTemperatures(vector<int> &temperatures) {
 
-        int n = temperatures.size();
+    int numTemps = temperatures.size();
 
-        // pair[index, temperature]
-        stack<pair<int, int>> stk;
-        vector <int> result(n);
+    // pair[index, temperature]
+    stack<pair<int, int>> stk;
+    vector<int> resultVector(numTemps);
 
-        for(int i = 0; i < n; i++)
-        {
-            int currentDay = i;
-            int currentTemp = temperatures[i];
+    // Loop through all of the given temperatures
+    for (int i = 0; i < numTemps; i++) {
+      int currentDay = i;
+      int currentTemp = temperatures[i];
 
-            // Iterate through the stack until the temperature is 
-            while(!stk.empty() && stk.top().second < currentTemp)
-            {
-                int previousTemp = stk.top().second;
-                int previousDay = stk.top().first;
+      // Iterate through the stack until the temperature is
+      while (!stk.empty() && stk.top().second < currentTemp) {
+        int previousTemp = stk.top().second;
+        int previousDay = stk.top().first;
 
-                stk.pop();
+        stk.pop();
 
-                result[previousDay] = currentDay - previousDay;
-                
-            }
+        resultVector[previousDay] = currentDay - previousDay;
+      }
 
-            stk.push({currentDay, currentTemp});
-
-        }
-        
-        return result;   
+      stk.push({currentDay, currentTemp});
     }
+
+    return resultVector;
+  }
 };
