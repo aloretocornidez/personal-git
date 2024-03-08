@@ -12,9 +12,9 @@ about 20 pounds above their fighting weight.
 ## Meal Timing
 
 - Eating every 3 to 4 hours
-- Do not let yourselft get too hungry, let you risk over eating.
+- Do not let yourself get too hungry, let you risk over eating.
 
-## Mixing Protiens, Fats, and Carbohydrates
+## Mixing Proteins, Fats, and Carbohydrates
 
 - The Glycemic Index (GI) ranks a food according to how fast it raises blood-sugar levels.
 - The warrior should not be eating only one energy source at a time.
@@ -32,7 +32,7 @@ about 20 pounds above their fighting weight.
 
 ## Potential Allergies
 
-- Make sure to undersand what you are allergic to.
+- Make sure to understand what you are allergic to.
 - If you get sick, your body will expound its energy in attempts to return to homeostasis.
 
 
@@ -42,7 +42,7 @@ about 20 pounds above their fighting weight.
 - Sleep is more important than you think. 
 - Everyone needs different amounts of sleep. 
 - 45 Minutes is the minimum amount of time to go through all sleep cycles.
-- 6 hours is the minimu amount of time required, but is not recommended.
+- 6 hours is the minimum amount of time required, but is not recommended.
 - 7.5 - 9 hours is the recommended during training.
 
 If you are not getting enough sleep:
@@ -52,7 +52,7 @@ If you are not getting enough sleep:
 
 **If you are not sleeping well, you will not train as well, and you will be hungrier, so make sure to sleep well.**
 
-- Your body percieves lack of sleep as a stressful situation, so cortisol is increased, which breaks down muscle tissue.
+- Your body perceives lack of sleep as a stressful situation, so cortisol is increased, which breaks down muscle tissue.
 
 
 ## Supplementation
