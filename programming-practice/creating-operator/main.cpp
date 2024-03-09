@@ -1,59 +1,84 @@
 #include <iostream>
 #include <ostream>
 
-class ComplexCartesian {
+class ComplexCartesian
+{
 public:
-  ComplexCartesian(double re = 0, double im = 0) {
+  ComplexCartesian(double re = 0, double im = 0)
+  {
     this->re = re;
     this->im = im;
   }
 
-  void print() {
+  void print()
+  {
 
-    if (this->im < 0) {
+    if (this->im < 0)
+    {
       std::cout << this->re << " - j" << -this->im << std::endl;
-    } else if (this->im == 0) {
+    }
+    else if (this->im == 0)
+    {
       std::cout << this->re << std::endl;
-    } else if (this->re == 0 && this->im < 0) {
+    }
+    else if (this->re == 0 && this->im < 0)
+    {
       std::cout << "- j" << -this->im << std::endl;
-    } else if (this->re == 0) {
+    }
+    else if (this->re == 0)
+    {
       std::cout << "j" << this->im << std::endl;
-    } else {
+    }
+    else
+    {
       std::cout << this->re << " + j" << this->im << std::endl;
     }
   }
 
-  friend std::ostream &operator<<(std::ostream &os, const ComplexCartesian &obj) {
+  friend std::ostream &operator<<(std::ostream &os, const ComplexCartesian &obj)
+  {
 
-    if (obj.im < 0) {
+    if (obj.im < 0)
+    {
       return os << obj.re << " -j" << -obj.im;
-    } else if (obj.im == 0) {
+    }
+    else if (obj.im == 0)
+    {
       return os << obj.re;
       std::cout << obj.re << std::endl;
-    } else if (obj.re == 0 && obj.im < 0) {
+    }
+    else if (obj.re == 0 && obj.im < 0)
+    {
       return os << " +j" << obj.im;
-    } else if (obj.re == 0) {
+    }
+    else if (obj.re == 0)
+    {
       return os << "j" << obj.im;
-    } else {
+    }
+    else
+    {
       return os << obj.re << " + j" << obj.im << std::endl;
     }
   }
 
-  ComplexCartesian operator+(ComplexCartesian const &obj) {
+  ComplexCartesian operator+(ComplexCartesian const &obj)
+  {
     ComplexCartesian result;
     result.re = this->re + obj.re;
     result.im = this->im + obj.im;
     return result;
   }
 
-  ComplexCartesian operator-(ComplexCartesian const &obj) {
+  ComplexCartesian operator-(ComplexCartesian const &obj)
+  {
     ComplexCartesian result;
     result.re = this->re - obj.re;
     result.im = this->im - obj.im;
     return result;
   }
 
-  ComplexCartesian operator*(ComplexCartesian const &obj) {
+  ComplexCartesian operator*(ComplexCartesian const &obj)
+  {
 
     double a = this->re;
     double b = this->im;
@@ -67,7 +92,8 @@ public:
     return result;
   }
 
-  ComplexCartesian operator/(ComplexCartesian const &obj) {
+  ComplexCartesian operator/(ComplexCartesian const &obj)
+  {
     ComplexCartesian result;
 
     double a = this->re;
@@ -86,7 +112,8 @@ private:
   double im;
 };
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 
   ComplexCartesian num1(2, -5), num2(6, 3);
 
