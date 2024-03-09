@@ -15,7 +15,7 @@ public:
     } else if (this->im == 0) {
       std::cout << this->re << std::endl;
     } else if (this->re == 0 && this->im < 0) {
-      std::cout << " - j" << -this->im << std::endl;
+      std::cout << "- j" << -this->im << std::endl;
     } else if (this->re == 0) {
       std::cout << "j" << this->im << std::endl;
     } else {
@@ -23,30 +23,19 @@ public:
     }
   }
 
-  friend std::ostream &operator<<(std::ostream &os,
-                                  const ComplexCartesian &obj) {
+  friend std::ostream &operator<<(std::ostream &os, const ComplexCartesian &obj) {
 
     if (obj.im < 0) {
-
       return os << obj.re << " -j" << -obj.im;
-
-    }
-
-    else if (obj.im == 0) {
+    } else if (obj.im == 0) {
       return os << obj.re;
       std::cout << obj.re << std::endl;
     } else if (obj.re == 0 && obj.im < 0) {
-
-      return os << obj.re << " +j" << obj.im << std::endl;
-      std::cout << " - j" << -obj.im << std::endl;
-
+      return os << " +j" << obj.im;
     } else if (obj.re == 0) {
-      return os << obj.re << " +j" << obj.im << std::endl;
-      std::cout << "j" << obj.im << std::endl;
+      return os << "j" << obj.im;
     } else {
-
-      return os << obj.re << " +j" << obj.im << std::endl;
-      std::cout << obj.re << " + j" << obj.im << std::endl;
+      return os << obj.re << " + j" << obj.im << std::endl;
     }
   }
 
@@ -105,9 +94,9 @@ int main(int argc, char *argv[]) {
   num2.print();
 
   ComplexCartesian temp = num1 * num2;
-  // temp.print();
+  temp.print();
 
-  std::cout << temp;
+  std::cout << temp << std::endl;
 
   return 0;
 }
