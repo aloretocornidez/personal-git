@@ -1,0 +1,11 @@
+
+
+# build files in the build dir...
+build/
+
+
+# in case I forget to actually make the build dir.
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles/
+Makefile
