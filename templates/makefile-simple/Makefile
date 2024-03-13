@@ -9,7 +9,7 @@ PROGRAM=main
 .PHONY: all
 all: ${PROGRAM}
 
-program: ${SRC}
+${PROGRAM}: ${SRC}
 	${CC} ${CFLAGS} -o ${PROGRAM}  ${SRC}
 
 .PHONY: clean
