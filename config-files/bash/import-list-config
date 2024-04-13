@@ -8,7 +8,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 
 # Name of files that are to be imported into the existing bash session
-files=( "aliases-config" "PS1-config")
+files=("aliases-config")
 
 for file in ${files[@]}; do
 [ -f $SCRIPT_DIR/$file ] && . $SCRIPT_DIR/$file

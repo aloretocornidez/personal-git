@@ -25,7 +25,7 @@ alias pushgit='git add .; git commit -m "auto-commit"; git push;'
 # alias openrepo="firefox `git remote get-url origin | sed 's/git@github.com:/github.com\//g'`"
 
 # alias notes='touch `date +"%m-%d-%y"`.md && vim `date +"%m-%d-%y"`.md'
-alias notes='cd ~/Downloads/school-notes/notes/spring-2024/'
+alias notes='cd ~/Downloads/school-notes/notes/spring-2024/ && nvim'
 
 alias pandoc='pandoc -V geometry:margin=1in '
 
