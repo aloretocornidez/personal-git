@@ -1,5 +1,0 @@
-# Importing Bash config files.
-if [ -f "$HOME/Downloads/personal-git/config-files/bash/import-list-config" ]; then
-  source $HOME/Downloads/personal-git/config-files/bash/import-list-config
-fi
-
