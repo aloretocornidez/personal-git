@@ -1,0 +1,75 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{cite, hyperref}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx, subfig}
+\usepackage{textcomp}
+
+
+\begin{document}
+
+% Title
+\title{Example Paper}
+
+% Author Block
+\author{
+    \IEEEauthorblockN{Alan Manuel Loreto Cornídez}
+    \IEEEauthorblockA{\textit{College of Electrical and Computer Engineering} \\
+    \textit{The University of Arizona}\\
+    Tucson, Arizona \\
+    aloretocornidez@arizona.edu}
+    %\and
+}
+
+\maketitle
+
+% Keywords
+\begin{IEEEkeywords}
+  Lorem, ipsum, dolor, sit, amet, qui, minim, labore, adipisicing, minim, sint, cillum, sint, consectetur, cupidatat,
+\end{IEEEkeywords}
+
+% Abstract
+\begin{abstract}
+  Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+\end{abstract}
+
+
+% Introduction
+\section{Introduction}
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis \cite{sun1090mhz}.
+
+You can site using autoref: Look at \autoref{fig:sample-figure}.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.45\textwidth]{./figures/arch-linux-logo-small.png}
+  \end{center}
+  \caption{Here's a figure}\label{fig:sample-figure}
+\end{figure}
+
+% Sections
+\section{Equations}
+Here is the fourier transform.
+
+% Equations
+\begin{equation}
+  \int_{-\infty}^{\infty} f(t) e^{- j \omega t} dt
+  \label{eq:fourier-transform}
+\end{equation}
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis \cite{sun1090mhz}.
+Here's the fourier transform in line: $\int_{-\infty}^{\infty} f(t) e^{- j \omega t} dt$
+
+
+And here it is again not in line:
+$$\int_{-\infty}^{\infty} f(t) e^{- j \omega t} dt$$
+
+%% Conclusion
+\section{Conclusion}
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+
+%% Generate the BibTeX bibliography.
+\bibliographystyle{ieeetr}
+\bibliography{refs}
+
+\end{document}
+
